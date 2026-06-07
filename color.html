@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>student login</title>
+
+    
+
+    <style>
+        body {
+            text-align: center;
+            font-family: arial;
+            margin-top: 100px;
+            background-color: rgba(218, 35, 35, 0.336);
+            animation: fadeIn 1.5s;
+        }
+        @keyframes fadeIn{
+            from{opacity: o;}
+            to{opacity: 1;}
+        }
+        h1{
+            animation: slideDown 1s;
+        }
+        @keyframes slideDown{
+            from{
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to{
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        #error {
+            color: red;
+        }
+        input {
+            width: 250px;
+            padding: 10px;
+            font-size: medium;
+            border: 2px solid gray;
+            border-radius: 8px;
+        }
+
+
+    </style>
+
+    <h1>Student Login</h1>
+
+    <input type="text" id="username" placeholder="username">
+    <br><br>
+    <input type="password" id="password" placeholder="password">
+    <br><br>
+
+    <button class="btn" onclick="login()">submit</button>
+
+    <style>
+        .btn{
+            border-radius: 8px;
+            padding-inline: 5px 5px;
+            background-color: cyan;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 3);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.06);
+        }
+    </style>
+
+    <p id="error"></p>
+
+    <script src="color.js"></script>
+
+</head>
+<body>
+    
+</body>
+</html>

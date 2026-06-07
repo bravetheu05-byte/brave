@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Student information</title>
+
+    
+</head>
+<body>
+    <h1>Student information</h1>
+
+    <p id="name"></p>
+    <p id="course"></p>
+    <button onclick="logout()">logout</button>
+
+    <script>
+        document.getElementById("name").textContent = "name: " + localStorage.getItem("name");
+        
+        document.getElementById("course").textContent = "course: " + localStorage.getItem("course");
+
+        
+        function logout(){
+            window.location.href = "color.html";
+        }
+    </script>
+    <p>I love you baby girl with all my hEART</p>
+</body>
+</html>
